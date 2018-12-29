@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for xcomponent-jest/xcomponents/TimePicker/WeekPicker.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">xcomponent-jest/xcomponents/TimePicker</a> WeekPicker.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/34</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/66</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/15</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/34</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import DayPicker from 'react-day-picker';
+import moment from 'moment';
+import {BMonthPicker} from 'bcomponents';
+import YearPicker from './YearPicker';
+import { $_date } from 'services';
+import {YearMonthForm, Navbar} from './commonFunction';//自定义左右切换按钮
+&nbsp;
+&nbsp;
+//获取日期所在周
+function <span class="fstat-no" title="function not covered" >getWeekDays(</span>weekStart) {
+    const days = <span class="cstat-no" title="statement not covered" >[weekStart];</span>
+<span class="cstat-no" title="statement not covered" >    for (let i = 1; i &lt; 7; i += 1) {</span>
+<span class="cstat-no" title="statement not covered" >        days.push(</span>
+            moment(weekStart)
+                .add(i, 'days')
+                .toDate()
+        );
+    }
+<span class="cstat-no" title="statement not covered" >    return days;</span>
+}
+&nbsp;
+function <span class="fstat-no" title="function not covered" >getWeekRange(</span>date) {
+<span class="cstat-no" title="statement not covered" >    return {</span>
+        from: moment(date)
+            .startOf('week')
+            .add('days', 1) 
+            .toDate(),
+        to: moment(date)
+            .endOf('week')
+            .add('days', 1)
+            .toDate(),
+    };
+}
+&nbsp;
+export default class extends React.Component {
+<span class="fstat-no" title="function not covered" >    co</span>nstructor(props) {
+<span class="cstat-no" title="statement not covered" >        super(props);</span>
+<span class="cstat-no" title="statement not covered" >        this.state = {</span>
+            props:props.type,
+            maxDayRangeSelected: props.maxDayRangeSelected || 12, //以周为单位
+            dateValue: props.value.length &gt; 0 ? props.value[0] : '',
+            month: props.value.length &gt; 0 ? props.value[0] : new Date($_date.getDate(0)),
+            hoverRange: undefined,
+            selectedDays: props.value.length &gt; 0 ? getWeekDays(getWeekRange(new Date(props.value[0])).from) : [], //默认值去第一个日期获取本周数据
+            before: this.props.startValue,
+            after: this.props.endValue &amp;&amp; getWeekDays(getWeekRange(props.endValue).from)[0],
+            isShowMonth: false,
+            isShowYear: false,
+            mulDateValueArr: props.value.length &gt; 0 ? getWeekDays(getWeekRange(new Date(props.value[0])).from) : [], //默认值去第一个日期获取本周数据 
+        }
+<span class="cstat-no" title="statement not covered" >        this.format = props.dateFormat || 'YYYY/MM/DD';</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    fo</span>rmatDate(date) {
+<span class="cstat-no" title="statement not covered" >        return $_date.init(this.format, date);</span>
+    }
+&nbsp;
+    handleDayChange = <span class="fstat-no" title="function not covered" >da</span>te =&gt; {
+        const {type} = <span class="cstat-no" title="statement not covered" >this.props;</span>
+        const {mulDateValueArr} = <span class="cstat-no" title="statement not covered" >this.state;</span>
+        
+<span class="cstat-no" title="statement not covered" >        if((this.state.after &amp;&amp; getWeekDays(getWeekRange(date).from)[0].getTime() &lt; this.state.after.getTime() || this.state.before &amp;&amp; getWeekDays(getWeekRange(date).from)[0].getTime() &gt; this.state.before.getTime())){</span>
+<span class="cstat-no" title="statement not covered" >            this.setState({</span>
+                selectedDays: getWeekDays(getWeekRange(date).from),
+                dateValue: [getWeekDays(getWeekRange(date).from)[0], getWeekDays(getWeekRange(date).from)[6]]
+            }, <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >                 if(type === 'mul-select'){</span>
+                     //判断&gt;7天的数据，再次点击时重置选中时间
+<span class="cstat-no" title="statement not covered" >                     if((mulDateValueArr[mulDateValueArr.length-1].getTime() - mulDateValueArr[0].getTime()) &gt; 7*24*3600*1000 || Math.abs((getWeekDays(getWeekRange(date).from)[0]) - mulDateValueArr[0].getTime()) &gt;= this.state.maxDayRangeSelected*7*24*3600*1000){</span>
+<span class="cstat-no" title="statement not covered" >                        this.setState({</span>
+                            mulDateValueArr : this.state.dateValue
+                        })
+<span class="cstat-no" title="statement not covered" >                        this.props.onChange(this.state.dateValue)</span>
+                     }else{
+<span class="cstat-no" title="statement not covered" >                        mulDateValueArr[0].getTime() &gt; getWeekDays(getWeekRange(date).from)[0].getTime() ? mulDateValueArr.splice(0,1,getWeekDays(getWeekRange(date).from)[0])  :mulDateValueArr.splice(mulDateValueArr.length-1,1,getWeekDays(getWeekRange(date).from)[getWeekDays(getWeekRange(date).from).length - 1])</span>
+<span class="cstat-no" title="statement not covered" >                        this.props.onChange([this.state.mulDateValueArr[0],this.state.mulDateValueArr[this.state.mulDateValueArr.length-1]])</span>
+                    }
+                 }else{
+<span class="cstat-no" title="statement not covered" >                     this.props.onChange(this.state.dateValue)</span>
+                 }
+            });
+        }
+        
+    };
+&nbsp;
+<span class="fstat-no" title="function not covered" >    ha</span>ndleYearMonthClick(type){
+<span class="cstat-no" title="statement not covered" >        this.setState({</span>
+            isShowMonth: type === 'month'? true : false,
+            isShowYear: type === 'year' ? true : false
+        })
+    }
+&nbsp;
+    handleDayEnter = <span class="fstat-no" title="function not covered" >da</span>te =&gt; {
+<span class="cstat-no" title="statement not covered" >        if((this.state.after &amp;&amp; getWeekDays(getWeekRange(date).from)[0].getTime() &lt; this.state.after.getTime() || this.state.before &amp;&amp; getWeekDays(getWeekRange(date).from)[0].getTime() &gt; this.state.before.getTime())){</span>
+<span class="cstat-no" title="statement not covered" >            this.setState({</span>
+                hoverRange: getWeekRange(date),
+            });
+        }
+        
+    };
+&nbsp;
+    handleDayLeave = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        this.setState({</span>
+            hoverRange: undefined,
+        });
+    };
+&nbsp;
+<span class="fstat-no" title="function not covered" >    re</span>nder() {
+        const { hoverRange, selectedDays, isShowMonth, isShowYear, mulDateValueArr} = <span class="cstat-no" title="statement not covered" >this.state;</span>
+        const {type} = <span class="cstat-no" title="statement not covered" >this.props;</span>
+&nbsp;
+        const daysAreSelected = <span class="cstat-no" title="statement not covered" >type === 'mul-select' ? mulDateValueArr.length &gt; 0 : selectedDays.length &gt; 0;</span>
+&nbsp;
+        const modifiers = <span class="cstat-no" title="statement not covered" >{</span>
+            hoverRange,
+            selectedRange: daysAreSelected &amp;&amp; {
+                from: type === 'mul-select' ? mulDateValueArr[0] : selectedDays[0],
+                to: type === 'mul-select' ? mulDateValueArr[mulDateValueArr.length-1] : selectedDays[6],
+            },
+            hoverRangeStart: hoverRange &amp;&amp; hoverRange.from,
+            hoverRangeEnd: hoverRange &amp;&amp; hoverRange.to,
+            selectedRangeStart: daysAreSelected &amp;&amp; type === 'mul-select' ? mulDateValueArr[0] : selectedDays[0],
+            selectedRangeEnd: daysAreSelected &amp;&amp; type === 'mul-select' ? mulDateValueArr[mulDateValueArr.length-1] : selectedDays[6],
+        };
+<span class="cstat-no" title="statement not covered" >        return [</span>
+            !isShowMonth &amp;&amp; !isShowYear ?
+            &lt;DayPicker
+                key="weekPicker"
+                selectedDays={selectedDays}
+                month={this.state.month}
+                showOutsideDays
+                modifiers={modifiers}
+                disabledDays={{ before: this.state.before, after: new Date(this.state.after.getFullYear(),this.state.after.getMonth(),this.state.after.getDate()-1)}}
+                onDayClick={this.handleDayChange}
+                onDayMouseEnter={this.handleDayEnter}
+                onDayMouseLeave={this.handleDayLeave}
+                locale='zh-cn'
+                months={$_date._i18n.months}
+                weekdaysLong={$_date._i18n.weekdays}
+                weekdaysShort={$_date._i18n.weekdaysShort}
+                navbarElement={&lt;Navbar date={this.state.dateValue} onPreYear={<span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >                    this.setState({</span>
+                        month: new Date(new Date(this.state.month).getFullYear() - 1, new Date(this.state.month).getMonth())
+                    })
+                }} onNextYear={<span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >                    this.setState({</span>
+                        month: new Date(new Date(this.state.month).getFullYear() + 1, new Date(this.state.month).getMonth())
+                    })
+                }} /&gt;}
+                captionElement={<span class="fstat-no" title="function not covered" >({</span> date, localeUtils }) =&gt; (
+<span class="cstat-no" title="statement not covered" >                    &lt;YearMonthForm</span>
+                      date={date}
+                      localeUtils={localeUtils}
+                      onClick={::this.handleYearMonthClick}
+                    /&gt;
+                  )}
+            /&gt;: null,
+            isShowMonth ? 
+            &lt;div key="2" className="month"&gt;
+                &lt;BMonthPicker value={this.state.dateValue[0]} onChange={<span class="fstat-no" title="function not covered" >(r</span>es)=&gt;{
+<span class="cstat-no" title="statement not covered" >                    this.setState({</span>
+                        isShowMonth:false,
+                        month: new Date(res.getFullYear(),res.getMonth())
+                    })
+                }} /&gt;
+            &lt;/div&gt; : null,
+            isShowYear ? 
+            &lt;div key='3' className="year"&gt;
+                &lt;YearPicker value={this.state.dateValue[0]} onChange={<span class="fstat-no" title="function not covered" >(r</span>es)=&gt;{
+<span class="cstat-no" title="statement not covered" >                    this.setState({</span>
+                        isShowYear:false,
+                        month: new Date(res,this.props.value[0].getMonth())
+                    })
+                }} /&gt;
+            &lt;/div&gt;:null
+        ];
+    }
+}
+&nbsp;
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Dec 29 2018 11:05:35 GMT+0800 (GMT+08:00)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

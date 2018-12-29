@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for xcomponent-jest/xcomponents/Header/src/modify_pwd.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">xcomponent-jest/xcomponents/Header/src</a> modify_pwd.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/25</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/25</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import {XModal, XButton, XInput} from 'xcomponents';
+import {$_ajax, $_util, $_toast, $_localstorage} from 'services';
+&nbsp;
+export default class extends React.Component {
+<span class="fstat-no" title="function not covered" >    co</span>nstructor(props) {
+<span class="cstat-no" title="statement not covered" >        super(props);</span>
+<span class="cstat-no" title="statement not covered" >        this.state = {</span>
+            initialPwd: '',
+            newPwd: '',
+            confirmPwd: '',
+            warning: ''
+        };
+    }
+<span class="fstat-no" title="function not covered" >    sa</span>veFn(){
+<span class="cstat-no" title="statement not covered" >        if(!this.state.initialPwd){</span>
+<span class="cstat-no" title="statement not covered" >            this.setState({warning: '原始密码不能为空！'});</span>
+<span class="cstat-no" title="statement not covered" >            return;</span>
+          };
+<span class="cstat-no" title="statement not covered" >          if(!(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[^]{8,16}$/).test(this.state.newPwd)){</span>
+<span class="cstat-no" title="statement not covered" >            this.setState({warning: '新密码格式不正确（长度8-16位,包含大写字母、小写字母和数字）！'});</span>
+<span class="cstat-no" title="statement not covered" >            return;</span>
+          };
+<span class="cstat-no" title="statement not covered" >          if(!this.state.confirmPwd){</span>
+<span class="cstat-no" title="statement not covered" >            this.setState({warning: '确认新密码不能为空！'});</span>
+<span class="cstat-no" title="statement not covered" >            return;</span>
+          };
+<span class="cstat-no" title="statement not covered" >          if(this.state.confirmPwd !== this.state.newPwd){</span>
+<span class="cstat-no" title="statement not covered" >            this.setState({warning: '两次输入密码不一致！'});</span>
+<span class="cstat-no" title="statement not covered" >            return;</span>
+          };
+<span class="cstat-no" title="statement not covered" >        $_ajax.post('bcuser/v1/user/updateUserPwd', {</span>
+            initialPwd: $_util.salt(this.state.initialPwd),
+            newPwd: $_util.salt(this.state.newPwd),
+            confirmPwd: $_util.salt(this.state.confirmPwd)
+        }).then(<span class="fstat-no" title="function not covered" >(r</span>es) =&gt; {
+<span class="cstat-no" title="statement not covered" >            $_toast('修改成功');</span>
+<span class="cstat-no" title="statement not covered" >            setTimeout(<span class="fstat-no" title="function not covered" >()</span>=&gt;{</span>
+<span class="cstat-no" title="statement not covered" >                $_localstorage.delete('token');</span>
+<span class="cstat-no" title="statement not covered" >                window.location.href = '/';</span>
+            },500)
+            
+        }, <span class="fstat-no" title="function not covered" >(r</span>es) =&gt; {
+<span class="cstat-no" title="statement not covered" >            this.setState({warning: res.msg})</span>
+        });
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    re</span>nder() {
+        const {username,password} = <span class="cstat-no" title="statement not covered" >this.state;</span>
+<span class="cstat-no" title="statement not covered" >        return (</span>
+            &lt;div className="modify-pwd"&gt;
+                &lt;XModal.Header {...this.props} className={`${this.props.data.modify ? '' : 'mod-pwd-close-btn'}`}&gt;
+                    修改密码
+                &lt;/XModal.Header&gt;
+                &lt;XModal.Body&gt;
+                        &lt;span className='mod-title'&gt;&lt;span className="must-inputStar"&gt;*&lt;/span&gt;原始密码：&lt;/span&gt;
+                        &lt;XInput type="password" className="mod-pwd-input" placeholder="原始密码" value={this.state.initialPwd} onChange={<span class="fstat-no" title="function not covered" >(v</span>al)=&gt;{
+<span class="cstat-no" title="statement not covered" >                            this.setState({</span>
+                                initialPwd: val,
+                                warning: ''
+                            })
+                        }}/&gt;
+                        &lt;span className='mod-title'&gt;&lt;span className="must-inputStar"&gt;*&lt;/span&gt;新密码：&lt;/span&gt;
+                        &lt;XInput type="password" className="mod-pwd-input" maxLength='16' placeholder="新密码" value={this.state.newPwd} onChange={<span class="fstat-no" title="function not covered" >(v</span>al)=&gt;{
+<span class="cstat-no" title="statement not covered" >                            this.setState({</span>
+                            newPwd: val,
+                            warning: ''
+                            })
+                        }}/&gt;
+                        &lt;span className='mod-title'&gt;&lt;span className="must-inputStar"&gt;*&lt;/span&gt;确认新密码：&lt;/span&gt;
+                        &lt;XInput type="password" className="mod-pwd-input" maxLength='16' placeholder="确认新密码" value={this.state.confirmPwd} onChange={<span class="fstat-no" title="function not covered" >(v</span>al)=&gt;{
+<span class="cstat-no" title="statement not covered" >                            this.setState({</span>
+                            confirmPwd: val,
+                            warning: ''
+                            })
+                        }}/&gt;
+                        &lt;div className="updateWarningArea"&gt;
+                        {this.state.warning}
+                        &lt;/div&gt;
+                &lt;/XModal.Body&gt;
+                &lt;XModal.Footer&gt;
+                    &lt;XButton type="primary" size="sm" onClick={::this.saveFn}&gt;确定&lt;/XButton&gt;
+                &lt;/XModal.Footer&gt;
+            &lt;/div&gt;
+        );
+    }
+}
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Dec 29 2018 11:05:35 GMT+0800 (GMT+08:00)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

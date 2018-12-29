@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for xcomponent-jest/xcomponents/TimePicker/DatePicker.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">xcomponent-jest/xcomponents/TimePicker</a> DatePicker.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/18</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/24</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/18</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import { $_date } from 'services';
+import DayPicker from 'react-day-picker';
+import {BMonthPicker} from 'bcomponents';
+import  {YearMonthForm, Navbar}from './commonFunction'; //自定义切换
+import YearPicker from './YearPicker';
+&nbsp;
+export default class extends React.Component {
+<span class="fstat-no" title="function not covered" >    co</span>nstructor(props) {
+<span class="cstat-no" title="statement not covered" >        super(props);</span>
+<span class="cstat-no" title="statement not covered" >        this.handleYearMonthClick = this.handleYearMonthClick.bind(this);</span>
+<span class="cstat-no" title="statement not covered" >        this.state = {</span>
+            dateValue: props.value || '',
+            selectedDay: new Date($_date.getDate(-1)),
+            month: props.value || new Date($_date.getDate(0)),
+            isShowMonth: false,
+            isShowYear: false
+        }
+<span class="cstat-no" title="statement not covered" >        this.format = props.dateFormat || 'YYYY/MM/DD';</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    fo</span>rmatDate(date) {
+<span class="cstat-no" title="statement not covered" >        return $_date.init(this.format, date);</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    ha</span>ndleYearMonthClick(type){
+<span class="cstat-no" title="statement not covered" >        this.setState({</span>
+            isShowMonth: type === 'month'? true : false,
+            isShowYear: type === 'year' ? true : false
+        })
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    ha</span>ndleDayClick(day, { selected }, e) {
+<span class="cstat-no" title="statement not covered" >        e.nativeEvent.stopImmediatePropagation();</span>
+        let dayZeroHour = <span class="cstat-no" title="statement not covered" >new Date(day.getFullYear(),day.getMonth(),day.getDate());</span>
+<span class="cstat-no" title="statement not covered" >        if((this.props.endValue &amp;&amp; dayZeroHour.getTime() &lt; this.props.endValue.getTime() || this.props.startValue &amp;&amp; dayZeroHour.getTime() &gt; this.props.startValue.getTime())){</span>
+<span class="cstat-no" title="statement not covered" >            this.setState({</span>
+                selectedDay:  dayZeroHour,
+                dateValue:  dayZeroHour
+            }, <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >                this.props.onChange([this.state.selectedDay])</span>
+            });
+        }
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    re</span>nder() {
+        const {isShowMonth, isShowYear} = <span class="cstat-no" title="statement not covered" >this.state;</span>
+<span class="cstat-no" title="statement not covered" >        return [</span>
+            !isShowMonth &amp;&amp; !isShowYear ? 
+            &lt;DayPicker
+                key="picker"
+                selectedDays={this.state.selectedDay}
+                disabledDays={{ before: this.props.startValue, after: this.props.endValue }}
+                onDayClick={this.handleDayClick.bind(this)}
+                month={this.state.month}
+                locale='zh-cn'
+                months={$_date._i18n.months}
+                weekdaysLong={$_date._i18n.weekdays}
+                weekdaysShort={$_date._i18n.weekdaysShort}
+                navbarElement={&lt;Navbar date={this.state.dateValue} onPreYear={<span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >                    this.setState({</span>
+                        month: new Date(new Date(this.state.month).getFullYear() - 1, new Date(this.state.month).getMonth())
+                    })
+                }} onNextYear={<span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >                    this.setState({</span>
+                        month: new Date(new Date(this.state.month).getFullYear() + 1, new Date(this.state.month).getMonth())
+                    })
+                }} /&gt;}
+                captionElement={<span class="fstat-no" title="function not covered" >({</span> date, localeUtils }) =&gt; (
+<span class="cstat-no" title="statement not covered" >                    &lt;YearMonthForm</span>
+                      date={date}
+                      localeUtils={localeUtils}
+                      onClick={this.handleYearMonthClick}
+                    /&gt;
+                  )}
+            /&gt;: null,
+            isShowMonth ?
+            &lt;div key="2" className="month"&gt;
+                &lt;BMonthPicker value={this.state.dateValue} onChange={<span class="fstat-no" title="function not covered" >(r</span>es)=&gt;{
+<span class="cstat-no" title="statement not covered" >                    this.setState({</span>
+                        isShowMonth:false,
+                        month: new Date(res.getFullYear(),res.getMonth())
+                    })
+                }} /&gt;
+            &lt;/div&gt; : null,
+            isShowYear ? 
+            &lt;div key='3' className="year"&gt;
+                &lt;YearPicker value={this.state.dateValue} onChange={<span class="fstat-no" title="function not covered" >(r</span>es)=&gt;{
+<span class="cstat-no" title="statement not covered" >                    this.setState({</span>
+                        isShowYear:false,
+                        month: new Date(res,this.state.dateValue.getMonth())
+                    })
+                }} /&gt;
+            &lt;/div&gt;:null
+        ];
+    }
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Dec 29 2018 11:05:35 GMT+0800 (GMT+08:00)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

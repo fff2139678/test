@@ -1,0 +1,47 @@
+@import '../../../scss/color.scss';
+
+.main-header {
+    height: 100%;
+    color: $theme-deep-font;
+    .navbar {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        padding: 0 .4rem 0 .21rem;
+        height: 100%;
+        background-color: #fff;
+        .control-menu {
+            width: 1.6rem;
+            height: .24rem;
+            background: url('../../../assets/logo-white.png') no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    .ul-list {
+        padding: .18rem;
+        flex: 1;
+    }
+
+    .tool-list {
+        cursor: pointer;
+        .up-icon {
+            display: inline-block;
+            transform: rotate(90deg);
+            transition: all .3s;
+        }
+    }
+
+    .tool-item {
+        padding: .18rem 0.05rem;
+        color: #515666;
+    }
+
+    .xcomponent-toggle-box .count-toggle-box {
+        width: 1.2rem;
+        margin-left: -.2rem;
+        margin-top: .1rem;
+        &>li {
+            line-height: .35rem;
+        }
+    }
+}

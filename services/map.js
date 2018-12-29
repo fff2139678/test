@@ -1,0 +1,50 @@
+export default {
+  urlMap: {
+    'localhost:8081': '//localhost:3000',
+    '10.109.0.90:8081': '//10.109.0.90:8090',
+    '10.199.1.244:8081': '//10.199.1.244:8090',
+    'retail.intra.xlsdn.com': '//10.109.0.84:3010',
+    'retail.xlsdn.com': '//retail.megvii.com',
+  },
+  BrandMenuMap: {
+    品牌概览: '/brand_overview',
+
+    数据分析: '/data_analysis',
+    客流看板: '/data_analysis/customer_flow',
+    客群分析: '/data_analysis/customer_analysis',
+    客群分布: '/data_analysis/customer_analysis/distribution',
+    客群对比: '/data_analysis/customer_analysis/comparison',
+    交易分析: '/data_analysis/transition',
+
+    店务管理: '/shop_affairs',
+    员工管理: '/shop_affairs/staff',
+    考勤管理: '/shop_affairs/attendance',
+    考勤组管理: '/shop_affairs/attendance/management',
+    考勤统计: '/shop_affairs/attendance/statistics',
+
+    // '设备管理': '/device',
+    // '摄像头管理': '/device/camera',
+    // '考勤机管理': '/device/equipment'
+  },
+  MallMenuMap: {
+    商场概览: '/market_overview',
+    客流分析: '/flow_analysis',
+    管理中心: '/manager_center',
+    // '今日': '/market_overview/today',
+    // '近七日': '/market_overview/nearly_seven',
+    整场分析: '/flow_analysis/whole',
+    楼层分析: '/flow_analysis/floor_analysis',
+    区域分析: '/flow_analysis/area_analysis',
+    店铺分析: '/flow_analysis/shop_analysis',
+    客流轨迹: '/flow_analysis/flow_track',
+    客流趋势: '/flow_analysis/whole/flow_trend',
+    时段分布: '/flow_analysis/whole/period_distribute',
+    店铺排行: '/flow_analysis/shop_analysis/rank',
+    业态分析: '/flow_analysis/shop_analysis/form',
+    店铺关联: '/flow_analysis/shop_analysis/relevance',
+    首选店铺: '/flow_analysis/flow_track/prefer',
+    逛店轨迹: '/flow_analysis/flow_track/track',
+    店铺管理: '/manager_center/shop',
+    设备列表: '/manager_center/device',
+  },
+};

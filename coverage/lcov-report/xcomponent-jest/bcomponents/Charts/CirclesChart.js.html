@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for xcomponent-jest/bcomponents/Charts/CirclesChart.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">xcomponent-jest/bcomponents/Charts</a> CirclesChart.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/30</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/30</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * name:
+ * desc: 圆形列阵组件
+ * date: 2018/11/05
+ * author: fff
+ */
+&nbsp;
+import React, {Fragment} from 'react';
+import {observer, inject} from 'mobx-react';
+&nbsp;
+@inject ('FloorStore')
+@observer
+export default class CirclesChart extends React.Component {
+<span class="fstat-no" title="function not covered" >  co</span>nstructor (props) {
+<span class="cstat-no" title="statement not covered" >    super (props);</span>
+<span class="cstat-no" title="statement not covered" >    this.state = {</span>
+      curId: 0,
+      maxSize: 106,
+      minSize: 70,
+    };
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  co</span>mponentDidMount () {
+<span class="cstat-no" title="statement not covered" >    this.computeSize ();</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  co</span>mputeSize () {
+    let floorStore = <span class="cstat-no" title="statement not covered" >this.props.FloorStore;</span>
+    let dataList = <span class="cstat-no" title="statement not covered" >floorStore.dataList;</span>
+    let len = <span class="cstat-no" title="statement not covered" >dataList.length;</span>
+    let minItem = <span class="cstat-no" title="statement not covered" >dataList.reduce (<span class="fstat-no" title="function not covered" >(x</span>, y) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      return parseInt (x.num) &lt; y.num ? x : y;</span>
+    });
+    let maxItem = <span class="cstat-no" title="statement not covered" >dataList.reduce (<span class="fstat-no" title="function not covered" >(x</span>, y) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      return parseInt (x.num) &gt; y.num ? x : y;</span>
+    });
+    let maxSize = <span class="cstat-no" title="statement not covered" >this.state.maxSize;</span>
+    let minSize = <span class="cstat-no" title="statement not covered" >parseInt (maxSize * minItem.num / maxItem.num);</span>
+    let gap = <span class="cstat-no" title="statement not covered" >maxSize - minSize;</span>
+    // 楼层初始化
+    let sumWidth = <span class="cstat-no" title="statement not covered" >0;</span>
+<span class="cstat-no" title="statement not covered" >    dataList = dataList.map (<span class="fstat-no" title="function not covered" >it</span>em =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      item.size =</span>
+        minSize + parseInt ((item.num - minItem.num) / item.num * gap);
+<span class="cstat-no" title="statement not covered" >      item.size = item.size &gt; this.state.minSize</span>
+        ? item.size
+        : this.state.minSize;
+<span class="cstat-no" title="statement not covered" >      item.margin = parseInt ((maxSize - item.size) / 2);</span>
+<span class="cstat-no" title="statement not covered" >      sumWidth += item.size + 46;</span>
+<span class="cstat-no" title="statement not covered" >      return item;</span>
+    });
+    // 初始化楼层相关
+<span class="cstat-no" title="statement not covered" >    if (document.querySelector ('.circles-chart-box')) {</span>
+<span class="cstat-no" title="statement not covered" >      floorStore.floorBoxWidth = document.querySelector (</span>
+        '.circles-chart-box'
+      ).offsetWidth;
+<span class="cstat-no" title="statement not covered" >      floorStore.floorSum = sumWidth + (dataList.length - 1) * 45;</span>
+<span class="cstat-no" title="statement not covered" >      floorStore.showSlide = floorStore.floorBoxWidth &lt; floorStore.floorSum</span>
+        ? true
+        : false;
+    }
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  in</span>itFloor (index, data) {
+<span class="cstat-no" title="statement not covered" >    this.setState (</span>
+      {
+        curId: index,
+      },
+<span class="fstat-no" title="function not covered" >      ()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.props.onChange (data)</span>
+    );
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  re</span>nder () {
+    let dataList = <span class="cstat-no" title="statement not covered" >this.props.FloorStore.dataList;</span>
+<span class="cstat-no" title="statement not covered" >    return (</span>
+      &lt;div className="b-circles-chart"&gt;
+        {dataList.length &gt; 0
+          ? &lt;div
+              className="circles-chart-box"
+              style={{
+                transform: this.props.FloorStore.style,
+              }}
+            &gt;
+              {dataList.map (<span class="fstat-no" title="function not covered" >(i</span>tem, index) =&gt; {
+                let curColor = <span class="cstat-no" title="statement not covered" >index === this.state.curId ? 'active' : null;</span>
+<span class="cstat-no" title="statement not covered" >                return (</span>
+                  &lt;Fragment key={`${item.id}fragment`}&gt;
+                    {index &gt; 0
+                      ? &lt;div className="line-box" key={`${item.name}line`}&gt;
+                          &lt;div className="line-item" /&gt;
+                        &lt;/div&gt;
+                      : null}
+                    &lt;div className="circles-item"&gt;
+                      &lt;div
+                        className={`circles-item-btn ${curColor}`}
+                        onClick={this.initFloor.bind (this, index, item)}
+                        key={item.name}
+                        style={{
+                          width: `${item.size}px`,
+                          height: `${item.size}px`,
+                          marginTop: `${item.margin}px`,
+                        }}
+                      &gt;
+                        &lt;div className="txt"&gt;
+                          &lt;span&gt;{item.number}&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div className="title"&gt;
+                        {item.name}
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/Fragment&gt;
+                );
+              })}
+            &lt;/div&gt;
+          : &lt;div className="no-data"&gt;暂无数据&lt;/div&gt;}
+      &lt;/div&gt;
+    );
+  }
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Dec 29 2018 11:05:35 GMT+0800 (GMT+08:00)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

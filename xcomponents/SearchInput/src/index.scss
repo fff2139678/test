@@ -1,0 +1,48 @@
+.async-input-box {
+    position: relative;
+    display: flex;
+    width: 100%;
+    .async-input-toggle {
+        width: 100%;
+    }
+    .x-asyncinput-box {
+        width: 100%;
+    }
+    i {
+        position: absolute;
+        top: 0;
+        right: .5rem;
+        color: #B7BDD0;
+        cursor: pointer;
+    }
+    .x-asyncinput-top {
+        position: relative;
+    }
+    .x-cas-searchlist {
+        width: 100%;
+        display: inline-block;
+        overflow: auto;
+        max-height: 150px;
+        border: 1px solid #d0d0d0;
+        background-color: #FFFFFF;
+        border-radius: 4px;
+        padding: 0.04rem;
+        box-sizing: border-box;
+        .x-cas-list {
+            & > li {
+                cursor: pointer;
+                padding: 0.04rem;
+                border-radius: 2px;
+                box-sizing: border-box;
+                &:hover {
+                    background-color: #4288F0;
+                    color: #FFFFFF;
+                }
+                &.selected {
+                    background-color: #4288F0;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}

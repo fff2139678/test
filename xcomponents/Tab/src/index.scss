@@ -1,0 +1,37 @@
+@import '../../../scss/color.scss';
+
+.xcomponent-tab {
+    display: flex;
+    margin-bottom: .2rem;
+    line-height: .24rem;
+    &-title {
+        color: #515666;
+        margin-right: .1rem;
+    }
+    .list {
+        display: flex;
+        background-color: #fff;
+        border: 1px solid #c6c8d1;
+        border-radius: .04rem;
+        cursor: pointer;
+        color: #666;
+        .item {
+            height: .24rem;
+            width: .8rem;
+            text-align: center;
+            &:first-child {
+                border-top-left-radius: .03rem;
+                border-bottom-left-radius: .03rem;
+            }
+            &:last-child {
+                border-top-right-radius: .03rem;
+                border-bottom-right-radius: .03rem;
+            }
+
+        }
+        .active {
+            background-color: #7297ff;
+            color: #fff;
+        }
+    }
+}
